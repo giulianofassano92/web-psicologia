@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #FDFDF1;
+  --title-color: #AD8A5D; /* Placeholder: #AD5DE was not a valid color */
+  --text-color: #171717;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+}

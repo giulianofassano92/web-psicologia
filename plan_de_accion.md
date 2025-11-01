@@ -1,51 +1,51 @@
-# Plan de Acción: Página Web Full-Stack de Psicología
+# Plan de Acción y Estado del Proyecto: Página Web de Psicología
 
-Este documento describe el plan de acción para desarrollar la página web profesional para una psicóloga, incluyendo funcionalidades de backend para un formulario de contacto y un blog.
+*Última actualización: 1 de Noviembre de 2025*
 
-## Fase 1: Fundación y Despliegue Inicial (Sitio Estático)
+## 1. Resumen del Proyecto
 
-El objetivo de esta fase es tener una versión visualmente completa y funcional de la web online lo antes posible.
+*   **Objetivo:** Construir una página web profesional y moderna para la psicóloga Carla Snopek. La web servirá como carta de presentación, plataforma para sus servicios y alojará cursos en video.
+*   **Tecnología Elegida:**
+    *   **Framework:** Next.js (con React y TypeScript) para una aplicación moderna, rápida y con capacidades de backend integradas.
+    *   **Estilos:** Tailwind CSS para un diseño rápido y personalizable.
+    *   **Backend:** Se implementarán funcionalidades de backend usando API Routes de Next.js para el formulario de contacto y un futuro blog.
+    *   **Alojamiento:** Firebase Hosting para el frontend y, potencialmente, Firebase Functions para el backend.
 
-### Paso 1: Configuración del Entorno de Desarrollo
-- **Instalar Node.js:** Entorno de ejecución para Next.js.
-- **Instalar un Editor de Código:** Visual Studio Code (recomendado).
+## 2. Estado Actual del Proyecto
 
-### Paso 2: Creación del Proyecto Next.js
-- Crear un nuevo proyecto Next.js en una carpeta temporal.
-- Mover los archivos generados a la carpeta de trabajo actual (`web-psicologia`).
+Hemos completado con éxito la **Fase 1** del desarrollo: la creación de la **versión estática y visualmente completa de la página web**.
 
-### Paso 3: Estructura del Proyecto y Estilos Globales
-- Limpiar el código de ejemplo.
-- Definir la paleta de colores y tipografías en un archivo CSS global.
-- Crear la estructura de carpetas para componentes.
+### Hitos Completados:
 
-### Paso 4: Creación de Componentes y Secciones Estáticas
-- Desarrollar los componentes reutilizables: `Header` (navegación) y `Footer` (pie de página).
-- Construir las secciones principales de la página: Inicio, Sobre Mí, Servicios, Cursos (con videos de YouTube/Vimeo incrustados) y Testimonios.
-- Ensamblar todas las secciones en la página principal.
+*   **Configuración del Entorno:** Se ha instalado y configurado el entorno de desarrollo con Node.js y Next.js.
+*   **Estructura del Proyecto:** Se ha creado una estructura de proyecto limpia y organizada, con una carpeta `components` para las piezas de UI reutilizables.
+*   **Componentes Creados:** Se han desarrollado y estilizado todos los componentes estáticos que conforman la página:
+    *   `Header`: Con navegación funcional entre secciones.
+    *   `Footer`: Con información de copyright y enlaces a redes.
+    *   `Inicio`: Sección de bienvenida (Hero Section).
+    *   `SobreMi`: Presentación profesional con espacio para fotografía.
+    *   `Servicios`: Sección de tarjetas para describir las terapias.
+    *   `Cursos`: Espacios designados para incrustar videos.
+    *   `Testimonios`: Sección de prueba social con ejemplos.
+    *   `Contacto`: Llamado a la acción final con enlaces de contacto.
+*   **Ensamblaje y Estilo:** Todas las secciones se han integrado en una única página cohesiva, aplicando la paleta de colores y un diseño responsive (adaptable a móviles).
+*   **Actualización de Contenido:** Se han actualizado todos los enlaces de contacto (WhatsApp e Instagram) según la última información proporcionada.
 
-### Paso 5: Despliegue Inicial en Firebase
-- Configurar un proyecto en Firebase.
-- Instalar las herramientas de Firebase (Firebase CLI).
-- Desplegar la web estática en Firebase Hosting.
+**En resumen: la aplicación está funcionando localmente, es visualmente completa y está lista para ser desplegada por primera vez.**
 
-## Fase 2: Añadir Funcionalidades de Backend
+## 3. Próximos Pasos (Fases Pendientes)
 
-Con la base ya online, añadiremos funcionalidades dinámicas.
+### Fase 2: Despliegue y Funcionalidades Backend
 
-### Paso 6: Creación de un Formulario de Contacto Funcional
-- Diseñar y añadir el formulario de contacto en el frontend.
-- Crear una **API Route** en Next.js (ej. `/api/contact`) para recibir los datos del formulario.
-- Implementar la lógica en el servidor para validar los datos y enviarlos a un correo electrónico.
+*   **Paso 5: Despliegue Inicial en Firebase:** `[ ] Pendiente`
+    *   Subir la versión actual de la web a Firebase Hosting para que sea accesible públicamente a través de una URL.
+*   **Paso 6: Creación de un Formulario de Contacto Funcional:** `[ ] Pendiente`
+    *   Añadir un formulario a la sección de Contacto y crear la API Route en Next.js para procesar y enviar los datos.
+*   **Paso 7: Implementación del Blog (basado en Markdown):** `[ ] Pendiente`
+    *   Crear la funcionalidad para que la web pueda leer archivos Markdown como si fueran posts de un blog.
 
-### Paso 7: Implementación del Blog (basado en Markdown)
-- Definir una carpeta y estructura para guardar los posts del blog como archivos Markdown (`.md`).
-- Desarrollar la lógica en Next.js para leer estos archivos.
-- Crear la página del listado de posts del blog (`/blog`).
-- Crear las plantillas de página para mostrar cada post individual (`/blog/[slug]`).
+### Fase 3: Mantenimiento y Futuras Mejoras
 
-## Fase 3: Mantenimiento y Futuras Mejoras
-
-- **Migración a Headless CMS:** Si se necesita una interfaz más amigable para la gestión del blog, migrar el contenido a un Headless CMS como Sanity o Contentful.
-- **Optimización SEO:** Mejorar el posicionamiento en buscadores.
-- **Analíticas Web:** Integrar herramientas para medir el tráfico de la página.
+*   **Migración a Headless CMS:** `[ ] Pendiente`
+*   **Optimización SEO:** `[ ] Pendiente`
+*   **Analíticas Web:** `[ ] Pendiente`

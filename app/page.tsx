@@ -2,6 +2,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SobreMi from './components/SobreMi';
 import Servicios from './components/Servicios';
+import Cursos from './components/Cursos';
+import Testimonios from './components/Testimonios';
+import Contacto from './components/Contacto';
 
 const Inicio = () => (
   <section id="inicio" className="text-center py-24 bg-opacity-50" style={{backgroundColor: 'var(--background-color)'}}>
@@ -28,6 +31,9 @@ export default function Home() {
         <Inicio />
         <SobreMi />
         <Servicios />
+        <Cursos />
+        <Testimonios />
+        <Contacto />
       </main>
       <Footer />
     </div>

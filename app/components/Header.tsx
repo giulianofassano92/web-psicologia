@@ -19,7 +19,7 @@ const Header = () => {
         </div>
         <div>
           <a 
-            href="https://wa.me/543537661410" 
+            href="https://wa.me/5493537661410" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="bg-[var(--title-color)] text-white font-bold py-2 px-4 rounded hover:opacity-90"

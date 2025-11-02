@@ -1,16 +1,16 @@
 const TestimonialCard = ({ text, author }: { text: string, author: string }) => (
-  <div className="bg-white rounded-lg shadow-lg p-8">
-    <p className="text-lg text-[var(--text-color)] italic">"{text}"</p>
-    <p className="text-right font-semibold text-[var(--title-color)] mt-4">- {author}</p>
+  <div className="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-transform duration-300">
+    <p className="text-xl text-gray-600 italic leading-relaxed">"{text}"</p>
+    <p className="text-right font-bold text-gray-800 mt-6 text-lg">- {author}</p>
   </div>
 );
 
 const Testimonios = () => {
   return (
-    <section id="testimonios" className="py-20 bg-gray-50">
+    <section id="testimonios" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-[var(--title-color)] mb-12">Testimonios</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">Testimonios</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <TestimonialCard 
             text="Carla me brindó herramientas que realmente hicieron un cambio en mi día a día. Su calidez y profesionalismo son destacables."
             author="Ana P."

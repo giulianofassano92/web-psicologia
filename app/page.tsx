@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SobreMi from './components/SobreMi';
@@ -6,34 +9,33 @@ import Cursos from './components/Cursos';
 import Testimonios from './components/Testimonios';
 import Contacto from './components/Contacto';
 
+import Image from 'next/image';
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
+
 const Inicio = () => (
-  <section id="inicio" className="text-center py-24 bg-opacity-50" style={{backgroundColor: 'var(--background-color)'}}>
+  <section id="inicio" className="py-48 text-center">
     <div className="container mx-auto">
-      <h1 className="text-5xl font-bold text-[var(--title-color)]">Acompañamiento Psicológico para tu Bienestar</h1>
-      <p className="text-xl mt-6 max-w-3xl mx-auto text-[var(--text-color)]">Un espacio de calidez y comprensión para construir relaciones más saludables contigo y con los demás.</p>
-      <a 
-        href="https://wa.me/543537661410" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="mt-10 inline-block bg-[var(--title-color)] text-white font-bold py-4 px-10 rounded-full hover:opacity-90 text-lg shadow-lg"
-      >
-        Agendar Sesión
-      </a>
+      <h1 className="text-6xl font-bold text-gray-800 leading-tight">Acompañamiento Psicológico para tu Bienestar</h1>
+      <p className="text-2xl mt-8 max-w-3xl mx-auto text-gray-600 font-light">Un espacio de calidez y comprensión para construir relaciones más saludables contigo y con los demás.</p>
+      <div className="flex justify-center space-x-10 mt-12">
+      </div>
     </div>
   </section>
 );
 
 export default function Home() {
+  const [activeView, setActiveView] = useState('inicio');
+
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Header setActiveView={setActiveView} activeView={activeView} />
       <main className="flex-grow">
-        <Inicio />
-        <SobreMi />
-        <Servicios />
-        <Cursos />
-        <Testimonios />
-        <Contacto />
+        {activeView === 'inicio' && <Inicio />}
+        {activeView === 'sobre-mi' && <SobreMi />}
+        {activeView === 'servicios' && <Servicios />}
+        {activeView === 'cursos' && <Cursos />}
+        {activeView === 'testimonios' && <Testimonios />}
+        {activeView === 'contacto' && <Contacto />}
       </main>
       <Footer />
     </div>
